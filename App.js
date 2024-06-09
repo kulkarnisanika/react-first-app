@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
 //It will hold all react code
 
  //create HTML element by React

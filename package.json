@@ -1,0 +1,27 @@
+{
+  "name": "rectbasics",
+  "version": "1.0.0",
+  "description": "React Practice",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kulkarnisanika/react-first-app"
+  },
+  "keywords": [
+    "react",
+    "Sanika",
+    "Kulkarni"
+  ],
+  "author": "Sanika Kulkarni",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
