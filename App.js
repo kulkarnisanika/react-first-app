@@ -1,13 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//It will hold all react code
+//XML
+// XML => createElement() => JS Object => HTML element (by render)
+const heading = <h1> This is from XML.</h1>;
 
- //create HTML element by React
- const heading = React.createElement("h1", {"id": "heading"} , "Hello React!!!");
+//Functional Component
+const Title = () => (
+    <h1> Hello Functional Componnets!!</h1>
+);
 
- //find element and create it in react
- const findEle = ReactDOM.createRoot(document.getElementById("main"));
+//Component Composition 
+const TitleAdoption= () =>{
+    return (
+        <div className = "container">
+            <Title />
+            <div id= "paragraphStyle" >
+                <p>This is Functional Component which uses another component. Hence it is component composition</p>
+            </div>
+        </div>
+    )
+}
 
- //add created element in created  DOM which was found before step
- findEle.render(heading);
+const root = ReactDOM.createRoot(document.getElementById("main"));
+
+root.render(<TitleAdoption />);
+
+
+
